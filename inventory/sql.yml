@@ -1,0 +1,13 @@
+[sql]
+2022-1
+2022-2
+2022-3
+[sql:vars]
+ansible_user=vagrant
+ansible_password=vagrant
+ansible_connection=ssh
+ansible_shell_type=powershell
+# or cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas

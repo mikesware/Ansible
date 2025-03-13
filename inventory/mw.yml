@@ -1,0 +1,64 @@
+[ubuntu]
+ubuntu1
+#ubuntu2
+ubuntu2 ansible_host=192.168.0.116
+ubuntu3 ansible_host=192.168.0.253
+[ubuntu:vars]
+ansible_ssh_pass=cfbead4
+ansible_ssh_user=mike
+[dc]
+dc3
+win2022
+#dc3.mikesware.com
+#192.168.0.19
+#192.168.0.16
+[dc:vars]
+ansible_user=mike
+ansible_password=cfbead4
+ansible_connection=ssh
+ansible_shell_type=powershell
+# or cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas
+[win]
+w11
+alliance1 ansible_host=192.168.0.5
+[win:vars]
+#ansible_user=mikesware\Administrator
+ansible_user=mike
+ansible_password=cfbead4
+ansible_connection=ssh
+ansible_shell_type=powershell
+# or cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas
+[srv]
+d1
+#192.168.0.5
+#d1.mikesware.com
+#mojo.mikesware.com
+[srv:vars]
+#ansible_user=mikesware\Administrator
+ansible_user=mike
+ansible_password=cfbead4
+ansible_connection=ssh
+ansible_shell_type=powershell
+# or cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas
+[sql]
+2022-1
+2022-2
+2022-3
+[sql:vars]
+ansible_user=vagrant
+ansible_password=vagrant
+ansible_connection=ssh
+ansible_shell_type=powershell
+# or cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas

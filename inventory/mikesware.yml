@@ -1,0 +1,11 @@
+[DC]
+win2022.mikesware.com
+d3.mikesware.com
+
+[appservers]
+d1.mikesware.com
+mojo.mikesware.com
+[sql]
+2022-1.mikesware.com
+2022-2.mikesware.com
+2022-3.mikesware.com

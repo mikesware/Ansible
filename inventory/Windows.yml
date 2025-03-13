@@ -1,0 +1,9 @@
+Windows:
+  hosts:
+    d1:
+      http_port: 80
+      maxRequestsPerChild: 808
+    mojo:
+      http_port: 80
+      maxRequestsPerChild: 909
+    d3:
