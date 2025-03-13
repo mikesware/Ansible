@@ -1,0 +1,9 @@
+[sql]
+2022-1
+2022-2
+2022-3
+[sql:vars]
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5986
+ansible_winrm_transport=ntlm 
